@@ -51,13 +51,13 @@ document.addEventListener('DOMContentLoaded', function () {
         calendarElement.appendChild(table);
     }
 
-    // Вибір дати
+    // Выбор даты
     function selectDate(day) {
         selectedDate = new Date(new Date().getFullYear(), new Date().getMonth(), day);
         updateEventList();
     }
 
-    // Оновлення списку подій для вибраної дати
+    
     function updateEventList() {
         if (!selectedDate) return;
         const storedEvents = JSON.parse(localStorage.getItem('events')) || {};
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Додавання події
+    // Добавление событий
     addEventButton.addEventListener('click', function () {
         if (!selectedDate || newEventInput.value.trim() === '') return;
 
