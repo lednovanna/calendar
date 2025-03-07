@@ -8,14 +8,18 @@
 </head>
 <body>
     <h1>Event Calendar</h1>
+    <div class="calendar-header">
+        <button id="prev-month">◀ Prev</button>
+        <div id="month-year"></div>
+        <button id="next-month">Next ▶</button>
+    </div>
+
     <div id="calendar"></div>
     <div id="event-details">
-        <h2> Events for the selected date</h2>
+        <h2>Events for the selected date</h2>
         <ul id="event-list"></ul>
-        <input type="text" id="new-event" placeholder="Додати подію">
-        <button id="add-event">Add Event
-
-        </button>
+        <input type="text" id="new-event" placeholder="Add an event">
+        <button id="add-event">Add Event</button>
     </div>
     <script src="index.js"></script>
 </body>

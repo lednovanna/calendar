@@ -1,13 +1,27 @@
+body {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3e2f0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #976076;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 60px;
 }
 td {
     width: 14%;
     height: 50px;
     text-align: center;
     cursor: pointer;
-    border: 1px solid #ddd;
+    border: 1px solid #BAAA88;
 }
 .selected {
     background-color: lightblue;
