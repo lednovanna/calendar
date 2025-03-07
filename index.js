@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     let eventsForDay = storedEvents[dateStr] || [];
                     if (eventsForDay.length > 0) {
-                        td.style.backgroundColor = '#FFD700'; // Желтый цвет, если есть события
+                        td.style.backgroundColor = '#FFD700'; 
                     }
 
                     if (dayCounter === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
-                        td.style.border = '2px solid red'; // Подсвечиваем текущий день
+                        td.style.border = '2px solid #AC6C86'; 
                     }
 
                     td.textContent = dayCounter;
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         newEventInput.value = '';
         updateEventList();
-        createCalendar(currentMonth, currentYear); // Перерисовываем календарь, чтобы обновить цвета
+        createCalendar(currentMonth, currentYear); 
     });
 
     prevMonthButton.addEventListener('click', function () {

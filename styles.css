@@ -11,6 +11,10 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+h2 {
+    color: #976076;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -26,9 +30,40 @@ td {
 .selected {
     background-color: lightblue;
 }
+
 .event-list {
     margin-top: 20px;
 }
+
 .event-item {
     margin: 5px 0;
+}
+
+.calendar-header {
+    display: flex;
+    gap: 10px;
+    
+    align-items: center;
+}
+#prev-month,#next-month{
+    border: none;
+    background-color: aqua;
+    padding:  5px 10px;
+    border-radius: 8px;
+}
+
+#new-event {
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #976076;
+    width: 350px;
+    background-color: #f1f1f1;
+}
+
+#add-event {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: yellowgreen;
+    font-size: 18px;
 }
