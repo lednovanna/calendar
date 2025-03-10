@@ -92,7 +92,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     addEventButton.addEventListener('click', function () {
+        const errorMessageElement = document.getElementById('error-message');
+        if (!selectedDate) {
+            errorMessageElement.textContent = "Please select a date.";
+            return;
+        }
+        
+
         if (!selectedDate || newEventInput.value.trim() === '') return;
+
+       errorMessageElement.textContent = "";
 
         const storedEvents = JSON.parse(localStorage.getItem('events')) || {};
         if (!storedEvents[selectedDate]) {
@@ -129,3 +138,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     createCalendar(currentMonth, currentYear);
 });
+

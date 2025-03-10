@@ -67,3 +67,7 @@ td {
     background-color: yellowgreen;
     font-size: 18px;
 }
+
+#error-message {
+    color: red;
+}
